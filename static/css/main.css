@@ -158,6 +158,14 @@ input[type="submit"] {
     margin-top: 2em;
 }
 
+.loss {
+    color: #9f1313;
+}
+
+.profit {
+    color: #008609;
+}
+
 .fflogo {
     width: 100%;
     max-width: 355px;
@@ -192,6 +200,7 @@ input[type="submit"] {
     font-weight: 700;
     font-family: 'Crimson Text', serif;
     color: #792200;
+    font-size: 12px;
 }
 
 a, .spl {
@@ -211,6 +220,9 @@ a:hover {
 
 #result {
     min-height: 54px;
+    font-weight: bold;
+    color: #64330b;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 1000px) {

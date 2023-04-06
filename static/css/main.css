@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +22,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    font-weight: 400;
     font-family: 'Crimson Text', serif;
 }
 
@@ -46,8 +47,7 @@ label {
 
 input[type="text"] {
     font-size: 1rem;
-    font-weight: bold;
-    color: #8b6b00;
+    color: #472504;
     font-family: 'Crimson Text', serif;
     background-color: rgba(183, 154, 26, 0.2);
     border: 2px solid #795b00;
@@ -138,7 +138,7 @@ input[type="submit"] {
 .calculator {
     width: 100%;
     max-width: 460px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     background-color: #ffefd0bd;
     border: 2px solid Gold;
     border-radius: 8px;
@@ -183,12 +183,11 @@ input[type="submit"] {
 }
 
 .blockquote {
-    padding: 20px;
+    padding: 15px;
 }
 
 .quote {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: 1.1rem;
     font-style: italic;
     text-align: justify;
 }
@@ -197,7 +196,7 @@ input[type="submit"] {
     margin-top: 0.5em;
     border-top: 1px solid #795b00;
     padding-top: 0.5em;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Crimson Text', serif;
     color: #792200;
     font-size: 12px;
@@ -212,10 +211,42 @@ a:hover {
     color: #9b7a0d;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #795b00;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+}
+
+td {
+    border-right: 1px solid #795b00;
+    padding: 0.5em;
+}
+
+tr {
+    border-bottom: 1px solid #795b00;
+}
+
+td:first-child {
+    font-weight: 700;
+}
+
+td:last-child {
+    text-align: right;
+    font-weight: 400;
+}
+
+tr:last-child {
+    border-top: 2px solid #795b00;
+}
+
+
 .credit-text {
     font-size: 12px;
-    font-weight: 700;
     color: #2e345a;
+    padding: 15px;
 }
 
 #result {

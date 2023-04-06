@@ -29,7 +29,6 @@ calculateForm.addEventListener("submit", (e) => {
     const buyTax = Math.ceil(buyPriceValue * buyTaxRate);
     const sellTax = Math.ceil(sellPriceValue * sellTaxRate);
     const profit = sellPriceValue - buyPriceValue - buyTax - sellTax;
-    const timesProfit  = profit / (buyPriceValue + buyTax);
 
     const resultDisplay = `
         <table class="result-display">
@@ -51,8 +50,7 @@ calculateForm.addEventListener("submit", (e) => {
             </tr>
             <tr>
                 <td>${profit > 0 ? "Profit" : "Loss"}:</td>
-                <td><span class="${profit > 0 ? "profit" : "loss"}">${commaSeparateNumber(Math.abs(profit))}</span> Gil 
-                ${profit > 0 ? `(${timesProfit.toFixed(2)}x returns)` : `(${timesProfit.toFixed(2)}x loss)`}</td>
+                <td><span class="${profit > 0 ? "profit" : "loss"}">${commaSeparateNumber(Math.abs(profit))}</span> Gil</td>
                 </td>
             </tr>
         </table>

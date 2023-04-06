@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    background: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Crimson Text', serif;
+}
+
+#main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 2em;
+    margin: 0 auto;
+    background: url("../images/main.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 667px;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #795b00;
+    font-family: sans-serif;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8b6b00;
+    font-family: 'Crimson Text', serif;
+    background-color: rgba(183, 154, 26, 0.2);
+    border: 2px solid #795b00;
+    border-radius: 8px;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 280px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #795b00;
+    border-radius: 4px;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #ffefd0bd;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ffefd0bd;
+    border: 2px solid #795b00;
+    border-radius: 4px;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #ffefd0bd;
+    display: inline-block;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '\2714';
+    font-size: 1.3em;
+    color: #795b00;
+    position: absolute;
+    top: -0.3em;
+    left: 0.1em;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to bottom, #8b6b00, #795b00);
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffefd0bd;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+}
+
+.form-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.gillogo {
+    width: 36px;
+    height: 36px;
+}
+
+.autoflex-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.credits,
+.calculator {
+    width: 100%;
+    max-width: 460px;
+    padding: 20px;
+    background-color: #ffefd0bd;
+    border: 2px solid Gold;
+    border-radius: 8px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.divider {
+    width: 100%;
+    background: url("../images/divider.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 32px;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.fflogo {
+    width: 100%;
+    max-width: 355px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.mfplogo {
+    width: 100%;
+    max-width: 230px;
+    height: 32px;
+    margin: 0 auto;
+    display: block;
+}
+
+.blockquote {
+    padding: 20px;
+}
+
+.quote {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-style: italic;
+    text-align: justify;
+}
+
+.tooltip {
+    margin-top: 0.5em;
+    border-top: 1px solid #795b00;
+    padding-top: 0.5em;
+    font-weight: 700;
+    font-family: 'Crimson Text', serif;
+    color: #792200;
+}
+
+a, .spl {
+    color: #623a0c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9b7a0d;
+}
+
+.credit-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2e345a;
+}
+
+#result {
+    min-height: 54px;
+}
+
+@media screen and (max-width: 1000px) {
+    .autoflex-2 {
+        flex-direction: column;
+    }
+
+    .credits, .calculator {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    input[type="text"] {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    input[type="text"] {
+        max-width: 120px;
+    }
+}

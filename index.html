@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFXIV Market Flipping Profit Calculator</title>
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+    <link rel="icon" href="/static/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+        <div class="autoflex-2">
+            <div class="credits">
+                <img src="/static/images/fflogo.png" alt="FFXIV Logo" class="fflogo">
+                <img src="/static/images/mfplogo.png" alt="MFP Logo" class="mfplogo">
+                <div class="divider mt-2"></div>
+                <blockquote class="blockquote">
+                    <p class="quote">Saw that sweet sweet item that got listed accidentally for 400 Gil, while it should be 400,000 Gil and wondered if you buy it and sell it again, how much profit you would make? You know you pay tax both ways, but how much will you end up with?</p>
+                </blockquote>
+            </div>
+            <div class="calculator">
+                <form>
+                    <div class="form-block">
+                        <label for="buyprice">Buying Price</label>
+                        <input type="text" name="buyprice" id="buyprice" class="afnum" placeholder="Buying Price (Gil)" required autocomplete="off">
+                        <img class="gillogo" src="/static/images/gil.webp" alt="Gil Logo">
+                    </div>
+                    <div class="form-block">
+                        <label for="sellprice">Selling Price</label>
+                        <input type="text" name="sellprice" id="sellprice" class="afnum" placeholder="Selling Price (Gil)" required autocomplete="off">
+                        <img class="gillogo" src="/static/images/gil.webp" alt="Gil Logo">
+                    </div>
+                    <div class="form-block">
+                        <label for="checkbox-taxrates">
+                            <input type="checkbox" name="checkbox-taxrates" id="taxrates">
+                            Reduced Tax Rates
+                            <p class="tooltip">
+                                Check this box if the market you're selling stuff in has reduced tax rates. If you don't know, leave it unchecked.
+                            </p>
+                        </label>
+                    </div>
+                    <div class="form-block">
+                        <input type="submit" value="Calculate">
+                    </div>
+                    <div id="result"></div>
+                </form>
+                <div class="mt-2">
+                    <p class="tooltip credit-text">
+                        <span class="spl">1.</span> All graphics and icons used in this website are licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+                        <br>
+                        <span class="spl">2.</span> This project is not affiliated with Square Enix Co., Ltd. or any of its subsidiaries. The Final Fantasy XIV logo is a trademark of Square Enix Co., Ltd.
+                        <br>
+                        <span class="spl">3.</span> This project is licensed under the <a href="https://opensource.org/license/mit/" target="_blank">MIT License</a>. The source code can be found on <a href="https://github.com/luciferreeves/ffxivmfp" target="_blank">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
